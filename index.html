@@ -44,16 +44,16 @@
 <body>
 	<div id="gameContainer">
 		<canvas id="unity-canvas" data-pixel-art="true"></canvas>
-		<script src="Build/fang_runner_v100-webgl-web3.loader.js"></script>
+		<script src="Build/fang_runner_v110-webgl-web3.loader.js"></script>
 		<script>
 			createUnityInstance(document.querySelector("#unity-canvas"), {
-				dataUrl: "Build/fang_runner_v100-webgl-web3.data",
-				frameworkUrl: "Build/fang_runner_v100-webgl-web3.framework.js",
-				codeUrl: "Build/fang_runner_v100-webgl-web3.wasm",
+				dataUrl: "Build/fang_runner_v110-webgl-web3.data",
+				frameworkUrl: "Build/fang_runner_v110-webgl-web3.framework.js",
+				codeUrl: "Build/fang_runner_v110-webgl-web3.wasm",
 				streamingAssetsUrl: "StreamingAssets",
 				companyName: "ryz",
 				productName: "Fang Runner",
-				productVersion: "1.0",
+				productVersion: "1.1",
 			}).then(function (instance) {
 				var canvas = instance.Module.canvas;
 				var container = canvas.parentElement;
